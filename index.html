@@ -1,52 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WakeAI Privacy Policy</title>
-    <style>
-        body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-        h1 { color: #6C63FF; }
-        h2 { margin-top: 30px; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WakeAI Privacy Policy</title>
+<style>
+  :root {
+    --violet: #5B5BD6;
+    --ink: #1a1a1f;
+    --muted: #5c5c68;
+    --rule: #e6e6ec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 24px 96px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 1rem;
+    margin: 24px 0 8px;
+    color: var(--violet);
+  }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 600; }
+  a { color: var(--violet); }
+  .note {
+    background: #f6f6fb;
+    border-left: 3px solid var(--violet);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 24px 0;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
 </head>
 <body>
-    <h1>WakeAI Privacy Policy</h1>
-    <p>Last updated: May 2026</p>
+<div class="wrap">
 
-    <h2>Overview</h2>
-    <p>WakeAI is a behavioural operating system that learns your patterns to help manage your daily life. We take your privacy seriously. This policy explains what data we collect, how we use it, and your rights.</p>
+<h1>WakeAI Privacy Policy</h1>
+<p class="updated">Last updated: July 2026</p>
 
-    <h2>Data We Collect</h2>
-    <ul>
-        <li><strong>Location data</strong> — used to calculate travel time to calendar events and provide leave-time alerts. Not shared with third parties.</li>
-        <li><strong>Health data</strong> — sleep duration and step count from Apple HealthKit, used to personalise your daily insights. Never leaves your device in identifiable form.</li>
-        <li><strong>Calendar and reminders</strong> — read to show your schedule and create events on your behalf. Stored locally on your device.</li>
-        <li><strong>Behavioural patterns</strong> — anonymised usage data including alarm times, app usage hours, and interaction patterns. Used to power WakeAI's personalisation engine.</li>
-        <li><strong>Chat messages</strong> — conversations with WakeAI are stored to provide persistent chat history. Stored securely and associated only with your anonymous user ID.</li>
-        <li><strong>User context</strong> — facts you explicitly tell WakeAI about yourself (schedule, preferences, routines). Stored securely and used only to personalise your experience.</li>
-    </ul>
+<h2>Overview</h2>
+<p>WakeAI is a proactive assistant that learns your patterns to help manage your day. This policy explains what data we collect, where it goes, how long we keep it, and your rights over it.</p>
 
-    <h2>Anonymous Authentication</h2>
-    <p>WakeAI uses anonymous authentication. We do not collect your name, email address, or any personally identifying information. You are identified only by a randomly generated user ID.</p>
+<h2>Your account</h2>
+<p>When you first open WakeAI, an anonymous account is created automatically so the app works straight away. You are identified by a randomly generated ID, not by any personal detail.</p>
+<p>After onboarding, you sign in with <strong>Sign in with Apple</strong> or <strong>Google</strong>. This links your existing anonymous account to a permanent one, so your data survives a new phone or a reinstall. From your provider we receive:</p>
+<ul>
+  <li>Your <strong>name</strong>, if provided</li>
+  <li>Your <strong>email address</strong> — if you use Sign in with Apple you may choose Apple's private relay address, in which case we never see your real email</li>
+</ul>
+<p>We do not receive your password or any other credential from Apple or Google.</p>
 
-    <h2>Third Party Services</h2>
-    <ul>
-        <li><strong>Anthropic Claude API</strong> — your chat messages are processed by Anthropic's API to generate responses. Anthropic's privacy policy applies to this processing.</li>
-        <li><strong>Supabase</strong> — used for secure data storage. Data is encrypted in transit and at rest.</li>
-        <li><strong>Apple HealthKit</strong> — health data is accessed with your explicit permission and used only within the app.</li>
-    </ul>
+<h2>What we collect and where it goes</h2>
 
-    <h2>Data Retention</h2>
-    <p>Your data is retained for as long as you use the app. You can delete all your data at any time from the Settings screen using the Clear All Data option.</p>
+<h3>Stored on our servers, linked to your account</h3>
+<ul>
+  <li><strong>Chat messages</strong> — your conversations with Aura, stored so your history persists across devices.</li>
+  <li><strong>Facts you tell us</strong> — things you explicitly share about your schedule, routines and preferences, used to personalise responses.</li>
+  <li><strong>Usage events</strong> — records such as opening the app, creating an alarm or reminder, and sending a message. These include the titles and labels you give your alarms and reminders.</li>
+  <li><strong>Cloud backup</strong> — your alarms, reminders, departure events, name and preferred wake time, so they can be restored if you change or reset your device. Departure events include the destination addresses you have asked us to route you to.</li>
+  <li><strong>Your city</strong> — the assistant is told which city you are currently in, so it can reason about travel and timing. We do not send your precise coordinates.</li>
+</ul>
 
-    <h2>Children</h2>
-    <p>WakeAI is not directed at children under 13. We do not knowingly collect data from children.</p>
+<h3>Stored only on your device, never uploaded</h3>
+<ul>
+  <li><strong>Health and sleep data</strong> from Apple HealthKit — read on your device to show your sleep insights. It is never transmitted to our servers or anyone else.</li>
+  <li><strong>Saved location coordinates</strong> — the precise coordinates of places you save, such as home, work or the gym, stay on your device.</li>
+  <li><strong>Visit records</strong> — if you enable place learning, the underlying visit history never leaves your device.</li>
+</ul>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this policy from time to time. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+<h2>Place learning</h2>
+<div class="note">
+<p>Place learning is <strong>off by default</strong> and only runs if you turn it on.</p>
+</div>
+<p>If you enable it, WakeAI notices places you spend time and may suggest saving them. To do this it converts a location your device has measured into a street address and shows it to you. <strong>Nothing is saved without your confirmation.</strong> If you choose to save a suggested place, and you later use it as a destination for a departure event, that address is included in your cloud backup like any other destination. You can turn place learning off and delete learned data at any time in Settings.</p>
 
-    <h2>Contact</h2>
-    <p>For privacy questions contact: privacy@wakeai.app</p>
+<h2>Third parties who process your data</h2>
+<ul>
+  <li><strong>Anthropic</strong> — your messages are sent to Anthropic's Claude API to generate responses. Context sent alongside your message can include your saved locations and upcoming departure destinations. Anthropic's privacy terms apply to that processing.</li>
+  <li><strong>Railway</strong> — hosts the service that relays your messages to Anthropic.</li>
+  <li><strong>Supabase</strong> — hosts our database and authentication. Data is encrypted in transit and at rest.</li>
+  <li><strong>Apple and Google</strong> — provide sign-in. We receive only the identity details described above.</li>
+</ul>
+<p>We do not sell your data, and we do not share it with advertisers or data brokers.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+  <li>Your account data is kept while your account exists.</li>
+  <li><strong>Departure events in your cloud backup are limited to roughly the last 30 days.</strong> Older ones stay on your device only and are not held on our servers.</li>
+  <li>Deleting your account removes your server-side data as described below.</li>
+</ul>
+
+<h2>Deleting your account and data</h2>
+<p>You can delete your account at any time from <strong>Settings → Account → Delete Account</strong>. This permanently removes, from our servers:</p>
+<ul>
+  <li>your chat messages</li>
+  <li>the facts you have told us</li>
+  <li>your usage events</li>
+  <li>your cloud backup</li>
+  <li>your account itself</li>
+</ul>
+<p>You also choose whether to erase the data held on your device at the same time, or keep it. Deletion is irreversible: signing in again afterwards with the same Apple or Google account creates a new, empty account.</p>
+
+<h2>Your rights</h2>
+<p>You have the right to access the personal data we hold about you, to have it corrected, to have it erased, to restrict or object to how we process it, and to receive a copy of it in a portable form. To exercise any of these, contact us at the address below.</p>
+<p>If you are in the UK or EU and believe we have not handled your data properly, you have the right to complain to your data protection authority. In the UK this is the Information Commissioner's Office (ICO).</p>
+
+<h2>Children</h2>
+<p>WakeAI is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>We may update this policy. Material changes will be reflected in the "last updated" date at the top of this page.</p>
+
+<h2>Contact</h2>
+<p>For privacy questions, or to exercise any of your rights, contact <a href="mailto:hello@wakeai.online">hello@wakeai.online</a>.</p>
+
+<footer>
+WakeAI
+</footer>
+
+</div>
 </body>
 </html>
