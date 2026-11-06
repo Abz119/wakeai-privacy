@@ -70,7 +70,7 @@
 <div class="wrap">
 
 <h1>WakeAI Privacy Policy</h1>
-<p class="updated">Last updated: July 2026</p>
+<p class="updated">Last updated: November 2026</p>
 
 <h2>Overview</h2>
 <p>WakeAI is a proactive assistant that learns your patterns to help manage your day. This policy explains what data we collect, where it goes, how long we keep it, and your rights over it.</p>
@@ -90,14 +90,14 @@
 <ul>
   <li><strong>Chat messages</strong> — your conversations with Aura, stored so your history persists across devices.</li>
   <li><strong>Facts you tell us</strong> — things you explicitly share about your schedule, routines and preferences, used to personalise responses.</li>
-  <li><strong>Usage events</strong> — records such as opening the app, creating an alarm or reminder, and sending a message. These include the titles and labels you give your alarms and reminders.</li>
+  <li><strong>Usage events</strong> — records such as opening the app, creating an alarm or reminder, and sending a message. These include the titles and labels you give your alarms and reminders. The app reads its recent events back to show your patterns, suggest a wake-up time and personalise what the assistant is told.</li>
   <li><strong>Cloud backup</strong> — your alarms, reminders, departure events, name and preferred wake time, so they can be restored if you change or reset your device. Departure events include the destination addresses you have asked us to route you to.</li>
   <li><strong>Your city</strong> — the assistant is told which city you are currently in, so it can reason about travel and timing. We do not send your precise coordinates.</li>
 </ul>
 
 <h3>Stored only on your device, never uploaded</h3>
 <ul>
-  <li><strong>Health and sleep data</strong> from Apple HealthKit — read on your device to show your sleep insights. It is never transmitted to our servers or anyone else.</li>
+  <li><strong>Health and sleep data</strong> from Apple HealthKit — read on your device to show your sleep insights. Apart from the short summary sent to the assistant (see Anthropic below), your sleep history, heart rate and other Health data stay on your device.</li>
   <li><strong>Saved location coordinates</strong> — the precise coordinates of places you save, such as home, work or the gym, stay on your device.</li>
   <li><strong>Visit records</strong> — if you enable place learning, the underlying visit history never leaves your device.</li>
 </ul>
@@ -110,7 +110,7 @@
 
 <h2>Third parties who process your data</h2>
 <ul>
-  <li><strong>Anthropic</strong> — your messages are sent to Anthropic's Claude API to generate responses. Context sent alongside your message can include your saved locations and upcoming departure destinations. Anthropic's privacy terms apply to that processing.</li>
+  <li><strong>Anthropic</strong> — your messages are sent to Anthropic's Claude API to generate responses. Context sent alongside your message can include your saved locations, upcoming departure destinations, your alarms and reminders, your calendar events and the facts you have told us. If you allowed WakeAI to read Apple Health, it also includes a one-line summary of your sleep over the previous 24 hours (how long, your bedtime and wake time, and a quality rating worked out from the length) and today's step count, so replies can take them into account. If there is no sleep record, or you haven't allowed access, it says instead that no sleep data is available. We don't keep this summary on our servers, though Aura's replies, which may mention your sleep or steps, are stored with your chat messages as described above. Anthropic's privacy terms apply to that processing.</li>
   <li><strong>Railway</strong> — hosts the service that relays your messages to Anthropic.</li>
   <li><strong>Supabase</strong> — hosts our database and authentication. Data is encrypted in transit and at rest.</li>
   <li><strong>Apple and Google</strong> — provide sign-in. We receive only the identity details described above.</li>
